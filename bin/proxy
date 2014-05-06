@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+
+use Sabre\Proxy\Cli\Application;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$app = new Application();
+$app->run();

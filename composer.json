@@ -2,7 +2,8 @@
     "name": "sabre/proxy",
     "description": "A http proxy that logs every request.",
     "require": {
-        "sabre/http": "~2.0.3"
+        "sabre/http": "~2.0.3",
+        "symfony/console": "~2.4.4"
     },
     "authors": [
         {
@@ -10,5 +11,11 @@
             "email": "me@evertpot.com"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+
+    "autoload" : {
+        "psr-4" : {
+            "Sabre\\Proxy\\" : "lib/"
+        }
+    }
 }
